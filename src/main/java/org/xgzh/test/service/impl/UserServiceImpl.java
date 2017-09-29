@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import org.xgzh.test.dao.UserDao;
 import org.xgzh.test.entity.AcctUser;
 import org.xgzh.test.service.UserService;
@@ -14,6 +15,7 @@ import org.xgzh.test.service.UserService;
  * @author andy
  * @version 2.2 UserService 的实现
  */
+@Transactional
 @Service("userService")
 public class UserServiceImpl implements UserService {
 

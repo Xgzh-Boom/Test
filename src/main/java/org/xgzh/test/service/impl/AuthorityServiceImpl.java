@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import org.xgzh.test.dao.AuthorityDao;
 import org.xgzh.test.entity.AcctAuthority;
 import org.xgzh.test.service.AuthorityService;
@@ -12,9 +13,9 @@ import org.xgzh.test.service.AuthorityService;
  * 创建时间：2015-2-6 下午3:24:16
  * 
  * @author andy
- * @version 2.2 
- * AuthorityService 的实现
+ * @version 2.2 AuthorityService 的实现
  */
+@Transactional
 @Service("authorityService")
 public class AuthorityServiceImpl implements AuthorityService {
 

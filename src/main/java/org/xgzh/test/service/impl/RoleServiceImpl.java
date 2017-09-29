@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import org.xgzh.test.dao.RoleDao;
 import org.xgzh.test.entity.AcctRole;
 import org.xgzh.test.service.RoleService;
@@ -14,6 +15,7 @@ import org.xgzh.test.service.RoleService;
  * @author andy
  * @version 2.2 UserService 的实现
  */
+@Transactional
 @Service("roleService")
 public class RoleServiceImpl implements RoleService {
 
